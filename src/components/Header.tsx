@@ -5,6 +5,8 @@ export function Header() {
 
     const {currentModule, currentLesson} = useCurrentLesson()
 
+    if(!currentLesson || !currentModule) return null
+
 
     return (
         <div className="flex flex-col gap-1">
